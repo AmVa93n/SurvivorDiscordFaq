@@ -1,0 +1,156 @@
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    direction: rtl;
+    background-image: url('../images/background.png');
+    background-size: contain;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Trashim CLM", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Trashim CLM", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+#contents {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.header img {
+    margin-left: 10px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.question {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    justify-self: center;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+.question:hover {
+    opacity: 1;
+}
+
+.question-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-color: #5865F2;
+    transition-property: border-bottom-left-radius, border-bottom-right-radius;
+    transition-duration: 1s, 1s;
+}
+
+.question-open {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    opacity: 1;
+}
+
+.question-title p {
+    max-width: 90%;
+    color: white;
+}
+
+.q-btn {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    background-color: #a0a8ff;
+}
+
+.q-btn img {
+    width: 40%;
+}
+
+.q-btn:hover {
+    cursor: pointer;
+}
+
+.answer {
+    background-color: #a0a8ff;
+    max-width: 100%;
+    font-size: smaller;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0;
+    height: 0px;
+    transition-property: opacity, height;
+    transition-duration: 1s, 1s;
+    pointer-events: none;
+    margin-bottom: 10px;
+}
+
+.show {
+    pointer-events: all;
+    opacity: 1;
+    height: 140px;
+}
+
+#past-seasons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#past-seasons img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.image-link {
+    display: inline-block; /* Ensures the link only takes up as much space as the image */
+    /* Remove the border and set padding to 0 to ensure no extra space is clickable */
+    border: none;
+    padding: 0;
+    width: 35%;
+}
+
+a {
+    text-decoration: underline;
+    font-weight: bold;
+}
