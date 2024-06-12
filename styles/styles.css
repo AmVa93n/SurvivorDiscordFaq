@@ -1,7 +1,7 @@
 body {
     font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
     direction: rtl;
-    background-image: url('../images/background.png');
+    background-image: url('../images/background.jpg');
     background-size: contain;
 }
 
@@ -124,6 +124,7 @@ h2 {
     transition-duration: 1s, 1s;
     pointer-events: none;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .show {
@@ -167,6 +168,6 @@ a {
         max-width: 85%;
     }
     .show {
-        height: 200px;
+        height: 210px;
     }
   }
